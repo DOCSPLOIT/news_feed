@@ -21,9 +21,11 @@ export default function TopFeeds() {
           <div className={`flex w-1/2  mr-2 space-x-5`}>
             <img className="h-[127px]" src={t.image} alt={i + ``} />
             <div className="">
-              <h5 className="font-bold text-3xl">0{i + 1}</h5>
-              <p className="font-bold text-xl mt-1 tracking-tight">{t.head}</p>
-              <p className="mt-2  w-100">{t.scope}</p>
+              <h5 className="font-bold text-3xl text-[#c7c5cd]">0{i + 1}</h5>
+              <p className="font-bold text-[#00001a] hover:text-[#f15e50] cursor-pointer text-xl mt-1 tracking-tight">
+                {t.head}
+              </p>
+              <p className="mt-2 text-[#706b80] text-[15px] w-100">{t.scope}</p>
             </div>
           </div>
         );
