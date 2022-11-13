@@ -2,7 +2,7 @@ import React from "react";
 
 export default function NewItems() {
   return (
-    <div className="bg-[#00001a] grow px-6  text-white w-full self-stretch">
+    <div className="bg-[#00001a] grow px-6  text-white w-full md:self-stretch">
       <p className="text-4xl  pt-8 tracking-widest text-[#f1ab55] font-bold">
         New
       </p>

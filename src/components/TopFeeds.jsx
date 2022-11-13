@@ -1,5 +1,7 @@
 import Image1 from "../assets/image-retro-pcs.jpg";
 import Image2 from "../assets/image-top-laptops.jpg";
+import Image3 from "../assets/image-gaming-growth.jpg";
+
 export default function TopFeeds() {
   const items = [
     {
@@ -13,12 +15,21 @@ export default function TopFeeds() {
       head: "Top 10 Laptops of 2022",
       scope: "Our best picks for various needs and budgets.",
     },
+    {
+      image: Image3,
+
+      head: "The Growth of Gaming",
+      scope: "How the pandemic has sparked fresh opportunities.",
+    },
   ];
   return (
-    <div className="flex mt-[4.5rem] space-x-6">
+    <div className="flex flex-col mt-[4.5rem] md:flex-row  md:space-x-6">
       {items.map((t, i) => {
         return (
-          <div className={`flex w-1/2  mr-2 space-x-5`}>
+          <div
+            key={i}
+            className={`flex md:w-1/2  mt-10 md:mt-0 mr-2 space-x-5`}
+          >
             <img className="h-[127px]" src={t.image} alt={i + ``} />
             <div className="">
               <h5 className="font-bold text-3xl text-[#c7c5cd]">0{i + 1}</h5>
